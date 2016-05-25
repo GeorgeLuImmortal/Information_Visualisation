@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>USA Population Map</title>
+    <script src="js/d3.js"></script>
+    <script src="js/colorbrewer.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/colorbrewer.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Interactive USA Population Density Map and Bar Chart</h1>
+             
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
+       
+      
+        <div class="col-md-12" id="legend">
+            
+        </div>
+    
+        <div >
+            <div class="col-md-7" id="map">
+            </div>
+            <div class="col-md-5" id="bar-chart">
+            </div>
+        </div>
+        <div class="row">
+             <div class="col-md-12">
+                <label class="checkbox-sort" ><input type="checkbox" id="sort" > Sort Population</label>
+                    <input id="2010" type="button" value=" 2010 " onclick="valuechange2010()" />
+                    <input id="2012" type="button" value=" 2012 " onclick="valuechange2012()" />
+                    <input id="2013" type="button" value=" 2013 " onclick="valuechange2013()" />
+                    <input id="2014" type="button" value=" 2014 " onclick="valuechange2014()" />
+            </div>
+            <div class="col-md-12" id="globalbar">
+                <hr>
+            </div>
+        </div>
+       
+    </div>
+    
+    <script src="js/map-population.js"></script>
+    <script src="js/bar-population.js"></script>
+</body>
+</html>
